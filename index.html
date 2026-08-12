@@ -1,2 +1,489 @@
-<h1>Somayeh Fatahi</h1>
-<p>Welcome to my research website.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Somayeh Fatahi | Research</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #243247;
+      background: #f8fafc;
+      line-height: 1.7;
+    }
+
+    nav {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #173b68;
+    }
+
+    nav a {
+      color: #4b5563;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #173b68;
+    }
+
+    header {
+      background: white;
+      padding: 90px 25px;
+    }
+
+    .hero {
+      max-width: 1050px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    .hero-text {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #172b4d;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 22px;
+      font-weight: normal;
+      color: #64748b;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #475569;
+    }
+
+    .profile-placeholder {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      background: #e8eef6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 46px;
+      font-weight: bold;
+      color: #173b68;
+      flex-shrink: 0;
+    }
+
+    section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 75px 25px;
+    }
+
+    section h2 {
+      font-size: 30px;
+      color: #172b4d;
+      margin-bottom: 28px;
+    }
+
+    .intro {
+      max-width: 800px;
+      font-size: 17px;
+      color: #475569;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      color: #173b68;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #64748b;
+      font-size: 15px;
+    }
+
+    .publication {
+      background: white;
+      padding: 20px;
+      margin-bottom: 14px;
+      border-radius: 10px;
+      border-left: 4px solid #173b68;
+    }
+
+    .publication strong {
+      color: #172b4d;
+    }
+
+    .news-item {
+      margin-bottom: 18px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .date {
+      font-size: 13px;
+      color: #94a3b8;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .contact {
+      background: #172b4d;
+      color: white;
+      max-width: none;
+    }
+
+    .contact-container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 60px 25px;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact a {
+      color: #cbdcf5;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+      color: #94a3b8;
+      background: white;
+    }
+
+    @media (max-width: 750px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      header {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">Somayeh Fatahi</div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#students">Students</a>
+      <a href="#publications">Publications</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+<header>
+  <div class="hero">
+
+    <div class="hero-text">
+      <h1>Somayeh Fatahi, PhD</h1>
+
+      <h2>Artificial Intelligence Research</h2>
+
+      <p>
+        My research focuses on artificial intelligence,
+        large language models, trustworthy AI,
+        human-centered AI, and intelligent systems.
+      </p>
+    </div>
+
+    <div class="profile-placeholder">
+      SF
+    </div>
+
+  </div>
+</header>
+
+
+<section id="about">
+  <h2>About</h2>
+
+  <p class="intro">
+    Welcome to my research website. My work focuses on developing
+    and evaluating intelligent systems with an emphasis on
+    trustworthy, human-centered, and responsible artificial intelligence.
+    I collaborate with undergraduate and graduate students on research
+    projects across several areas of AI.
+  </p>
+</section>
+
+
+<section id="research">
+
+  <h2>Research Areas</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Large Language Models</h3>
+      <p>
+        Reliability, hallucination detection, evaluation,
+        reasoning, and responsible use of LLMs.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Trustworthy AI</h3>
+      <p>
+        Safety, transparency, uncertainty, verification,
+        and trustworthy AI systems.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>AI in Education</h3>
+      <p>
+        Intelligent learning environments, AI-assisted feedback,
+        assessment, and educational applications.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Human-Centered AI</h3>
+      <p>
+        Designing AI systems that consider human needs,
+        behaviour, interaction, and decision-making.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="students">
+
+  <h2>Students</h2>
+
+  <h3 style="margin-bottom:20px;">Current Students</h3>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Student Name</h3>
+      <p>
+        Program / Course
+      </p>
+      <p>
+        <strong>Research:</strong> Research project title
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Student Name</h3>
+      <p>
+        Program / Course
+      </p>
+      <p>
+        <strong>Research:</strong> Research project title
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Student Name</h3>
+      <p>
+        Program / Course
+      </p>
+      <p>
+        <strong>Research:</strong> Research project title
+      </p>
+    </div>
+
+  </div>
+
+
+  <h3 style="margin-top:45px; margin-bottom:20px;">
+    Previous Students
+  </h3>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Student Name</h3>
+      <p>
+        Research project title
+      </p>
+      <p>
+        Conference / Publication
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Student Name</h3>
+      <p>
+        Research project title
+      </p>
+      <p>
+        Conference / Publication
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="publications">
+
+  <h2>Selected Publications</h2>
+
+  <div class="publication">
+    <strong>Paper Title</strong><br>
+    Author names<br>
+    Journal / Conference, Year
+  </div>
+
+  <div class="publication">
+    <strong>Paper Title</strong><br>
+    Author names<br>
+    Journal / Conference, Year
+  </div>
+
+  <div class="publication">
+    <strong>Paper Title</strong><br>
+    Author names<br>
+    Journal / Conference, Year
+  </div>
+
+</section>
+
+
+<section id="news">
+
+  <h2>News</h2>
+
+  <div class="news-item">
+    <span class="date">August 2026</span>
+    Research abstracts accepted at AMMCS 2026.
+  </div>
+
+  <div class="news-item">
+    <span class="date">2026</span>
+    Add your latest publication, grant, conference, or student achievement here.
+  </div>
+
+</section>
+
+
+<section>
+
+  <h2>Research Opportunities</h2>
+
+  <p class="intro">
+    I welcome motivated students interested in artificial intelligence,
+    large language models, trustworthy AI, and related research areas.
+    Students interested in research opportunities may contact me with
+    their CV, research interests, and relevant experience.
+  </p>
+
+</section>
+
+
+<div class="contact" id="contact">
+
+  <div class="contact-container">
+
+    <h2>Contact</h2>
+
+    <p>
+      Email:
+      <a href="mailto:YOUR_EMAIL@wlu.ca">
+        YOUR_EMAIL@wlu.ca
+      </a>
+    </p>
+
+    <p>
+      Google Scholar |
+      LinkedIn |
+      GitHub
+    </p>
+
+  </div>
+
+</div>
+
+
+<footer>
+  © 2026 Somayeh Fatahi
+</footer>
+
+
+</body>
+</html>
