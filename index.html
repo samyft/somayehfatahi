@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,14 +38,8 @@
       margin: auto;
       padding: 18px 25px;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #173b68;
     }
 
     nav a {
@@ -60,7 +55,7 @@
 
     header {
       background: white;
-      padding: 90px 25px;
+      padding: 85px 25px;
     }
 
     .hero {
@@ -69,7 +64,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 50px;
+      gap: 55px;
     }
 
     .hero-text {
@@ -79,14 +74,14 @@
     .hero h1 {
       font-size: 48px;
       color: #172b4d;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .hero h2 {
       font-size: 22px;
       font-weight: normal;
       color: #64748b;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .hero p {
@@ -94,24 +89,42 @@
       color: #475569;
     }
 
-    .profile-placeholder {
-      width: 190px;
-      height: 190px;
+    .profile-photo {
+      width: 210px;
+      height: 210px;
       border-radius: 50%;
-      background: #e8eef6;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 46px;
-      font-weight: bold;
-      color: #173b68;
+      object-fit: cover;
+      border: 5px solid #e8eef6;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
       flex-shrink: 0;
+    }
+
+    .social-links {
+      margin-top: 28px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      text-decoration: none;
+      color: #173b68;
+      background: #f1f5f9;
+      border: 1px solid #dbe3ec;
+      padding: 8px 14px;
+      border-radius: 7px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .social-links a:hover {
+      background: #173b68;
+      color: white;
     }
 
     section {
       max-width: 1050px;
       margin: auto;
-      padding: 75px 25px;
+      padding: 70px 25px;
     }
 
     section h2 {
@@ -120,8 +133,12 @@
       margin-bottom: 28px;
     }
 
+    section h3 {
+      color: #172b4d;
+    }
+
     .intro {
-      max-width: 800px;
+      max-width: 850px;
       font-size: 17px;
       color: #475569;
     }
@@ -153,6 +170,7 @@
     .card p {
       color: #64748b;
       font-size: 15px;
+      margin-top: 5px;
     }
 
     .publication {
@@ -167,23 +185,9 @@
       color: #172b4d;
     }
 
-    .news-item {
-      margin-bottom: 18px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .date {
-      font-size: 13px;
-      color: #94a3b8;
-      display: block;
-      margin-bottom: 4px;
-    }
-
     .contact {
       background: #172b4d;
       color: white;
-      max-width: none;
     }
 
     .contact-container {
@@ -194,11 +198,16 @@
 
     .contact h2 {
       color: white;
+      margin-bottom: 20px;
     }
 
     .contact a {
-      color: #cbdcf5;
+      color: #d8e8ff;
       text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -219,24 +228,26 @@
         font-size: 38px;
       }
 
+      .profile-photo {
+        width: 170px;
+        height: 170px;
+      }
+
       .nav-links {
         display: none;
       }
 
       header {
-        padding: 60px 20px;
+        padding: 55px 20px;
       }
     }
   </style>
 </head>
 
-
 <body>
 
 <nav>
   <div class="nav-container">
-    <div class="logo">Somayeh Fatahi</div>
-
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#research">Research</a>
@@ -248,11 +259,11 @@
   </div>
 </nav>
 
-
 <header>
   <div class="hero">
 
     <div class="hero-text">
+
       <h1>Somayeh Fatahi, PhD</h1>
 
       <h2>Artificial Intelligence Research</h2>
@@ -260,28 +271,60 @@
       <p>
         My research focuses on artificial intelligence,
         large language models, trustworthy AI,
-        human-centered AI, and intelligent systems.
+        human-centered AI, AI in education,
+        and intelligent systems.
       </p>
+
+      <div class="social-links">
+
+        <a
+          href="https://scholar.google.com/citations?user=F6hfVc8AAAAJ&hl=en"
+          target="_blank">
+          Google Scholar
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/somayeh-fatahi/"
+          target="_blank">
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/samyft"
+          target="_blank">
+          GitHub
+        </a>
+
+        <a href="mailto:sfatahi@wlu.ca">
+          Email
+        </a>
+
+      </div>
+
     </div>
 
-    <div class="profile-placeholder">
-      SF
-    </div>
+    <img
+      src="profile.png"
+      alt="Somayeh Fatahi"
+      class="profile-photo"
+    >
 
   </div>
 </header>
 
 
 <section id="about">
+
   <h2>About</h2>
 
   <p class="intro">
     Welcome to my research website. My work focuses on developing
-    and evaluating intelligent systems with an emphasis on
-    trustworthy, human-centered, and responsible artificial intelligence.
-    I collaborate with undergraduate and graduate students on research
-    projects across several areas of AI.
+    and evaluating intelligent systems with an emphasis on trustworthy,
+    human-centered, and responsible artificial intelligence. I collaborate
+    with undergraduate and graduate students on research projects across
+    several areas of artificial intelligence.
   </p>
+
 </section>
 
 
@@ -295,23 +338,25 @@
       <h3>Large Language Models</h3>
       <p>
         Reliability, hallucination detection, evaluation,
-        reasoning, and responsible use of LLMs.
+        reasoning, retrieval-augmented generation,
+        and responsible use of LLMs.
       </p>
     </div>
 
     <div class="card">
       <h3>Trustworthy AI</h3>
       <p>
-        Safety, transparency, uncertainty, verification,
-        and trustworthy AI systems.
+        AI safety, transparency, uncertainty,
+        verification, reliability, and responsible AI systems.
       </p>
     </div>
 
     <div class="card">
       <h3>AI in Education</h3>
       <p>
-        Intelligent learning environments, AI-assisted feedback,
-        assessment, and educational applications.
+        Intelligent learning environments,
+        AI-assisted feedback, assessment,
+        educational data mining, and learning analytics.
       </p>
     </div>
 
@@ -319,7 +364,23 @@
       <h3>Human-Centered AI</h3>
       <p>
         Designing AI systems that consider human needs,
-        behaviour, interaction, and decision-making.
+        behaviour, interaction, trust, and decision-making.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Health AI</h3>
+      <p>
+        Artificial intelligence applications in healthcare,
+        safety-critical systems, and human-AI interaction.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Machine Learning</h3>
+      <p>
+        Machine learning methods, intelligent systems,
+        classification, prediction, and applied AI.
       </p>
     </div>
 
@@ -332,40 +393,12 @@
 
   <h2>Students</h2>
 
-  <h3 style="margin-bottom:20px;">Current Students</h3>
+  <h3 style="margin-bottom:20px;">
+    Current Students
+  </h3>
 
   <div class="cards">
-
-    <div class="card">
-      <h3>Student Name</h3>
-      <p>
-        Program / Course
-      </p>
-      <p>
-        <strong>Research:</strong> Research project title
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Student Name</h3>
-      <p>
-        Program / Course
-      </p>
-      <p>
-        <strong>Research:</strong> Research project title
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Student Name</h3>
-      <p>
-        Program / Course
-      </p>
-      <p>
-        <strong>Research:</strong> Research project title
-      </p>
-    </div>
-
+    <!-- Current student information will go here -->
   </div>
 
 
@@ -374,27 +407,7 @@
   </h3>
 
   <div class="cards">
-
-    <div class="card">
-      <h3>Student Name</h3>
-      <p>
-        Research project title
-      </p>
-      <p>
-        Conference / Publication
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Student Name</h3>
-      <p>
-        Research project title
-      </p>
-      <p>
-        Conference / Publication
-      </p>
-    </div>
-
+    <!-- Previous student information will go here -->
   </div>
 
 </section>
@@ -404,23 +417,7 @@
 
   <h2>Selected Publications</h2>
 
-  <div class="publication">
-    <strong>Paper Title</strong><br>
-    Author names<br>
-    Journal / Conference, Year
-  </div>
-
-  <div class="publication">
-    <strong>Paper Title</strong><br>
-    Author names<br>
-    Journal / Conference, Year
-  </div>
-
-  <div class="publication">
-    <strong>Paper Title</strong><br>
-    Author names<br>
-    Journal / Conference, Year
-  </div>
+  <!-- Publications will go here -->
 
 </section>
 
@@ -429,15 +426,7 @@
 
   <h2>News</h2>
 
-  <div class="news-item">
-    <span class="date">August 2026</span>
-    Research abstracts accepted at AMMCS 2026.
-  </div>
-
-  <div class="news-item">
-    <span class="date">2026</span>
-    Add your latest publication, grant, conference, or student achievement here.
-  </div>
+  <!-- News will go here -->
 
 </section>
 
@@ -448,9 +437,10 @@
 
   <p class="intro">
     I welcome motivated students interested in artificial intelligence,
-    large language models, trustworthy AI, and related research areas.
-    Students interested in research opportunities may contact me with
-    their CV, research interests, and relevant experience.
+    large language models, trustworthy AI, AI in education,
+    human-centered AI, health AI, and related research areas.
+    Students interested in research opportunities may contact me
+    with their CV, research interests, and relevant experience.
   </p>
 
 </section>
@@ -464,15 +454,35 @@
 
     <p>
       Email:
-      <a href="mailto:YOUR_EMAIL@wlu.ca">
-        YOUR_EMAIL@wlu.ca
+      <a href="mailto:sfatahi@wlu.ca">
+        sfatahi@wlu.ca
       </a>
     </p>
 
-    <p>
-      Google Scholar |
-      LinkedIn |
-      GitHub
+    <p style="margin-top:12px;">
+
+      <a
+        href="https://scholar.google.com/citations?user=F6hfVc8AAAAJ&hl=en"
+        target="_blank">
+        Google Scholar
+      </a>
+
+      &nbsp; | &nbsp;
+
+      <a
+        href="https://www.linkedin.com/in/somayeh-fatahi/"
+        target="_blank">
+        LinkedIn
+      </a>
+
+      &nbsp; | &nbsp;
+
+      <a
+        href="https://github.com/samyft"
+        target="_blank">
+        GitHub
+      </a>
+
     </p>
 
   </div>
@@ -483,7 +493,6 @@
 <footer>
   © 2026 Somayeh Fatahi
 </footer>
-
 
 </body>
 </html>
